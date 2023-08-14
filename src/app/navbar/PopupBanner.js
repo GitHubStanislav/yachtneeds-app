@@ -2,7 +2,7 @@ const PopupBanner = ({ isOpen, onClose }) => {
   return (
     <>
       {isOpen && (
-        <div className="fixed top-0 left-0 right-0 bg-orange-600 text-white p-2 flex justify-center items-center">
+        <div className="flex flex-wrap bg-orange-600 text-white p-2 flex justify-center items-center">
           <div>
             <p className="text-xs font-bold">
               FREE SHIPPING ON ALL ORDERS. SHOP NOW!
@@ -13,7 +13,7 @@ const PopupBanner = ({ isOpen, onClose }) => {
           </div>
           <button
             onClick={onClose}
-            className="text-white text-lg font-bold absolute top-2 right-8"
+            className="text-white text-lg font-bold absolute top-2 right-4"
           >
             &#10005;
           </button>
