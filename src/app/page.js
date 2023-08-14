@@ -1,7 +1,18 @@
+"use client";
+import { useState } from "react";
+import PopupBanner from "@/app/navbar/PopupBanner";
 
+const Home = () => {
+  const [isBannerOpen, setIsBannerOpen] = useState(true);
 
-export default function Home() {
+  const closeBanner = () => {
+    setIsBannerOpen(false);
+  };
+
   return (
-    <div>Hello</div>
-  )
-}
+    <div>
+      <PopupBanner isOpen={isBannerOpen} onClose={closeBanner} />
+    </div>
+  );
+};
+export default Home;
