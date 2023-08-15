@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import PopupBanner from "@/app/navbar/PopupBanner";
+import PopupBanner from "@/app/header/PopupBanner";
+import HeaderSearch from "@/app/header/HeaderSearch";
 
 const Home = () => {
   const [isBannerOpen, setIsBannerOpen] = useState(true);
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div>
       <PopupBanner isOpen={isBannerOpen} onClose={closeBanner} />
+      <HeaderSearch />
     </div>
   );
 };
