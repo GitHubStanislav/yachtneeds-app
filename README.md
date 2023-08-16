@@ -66,7 +66,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 🌐 **Project Link** - [Click Here](#)
 
-👤 **Author Name** - Your Name
+👤 **Author Name** - Spiridonov Stanislav 
 
 ---
 
