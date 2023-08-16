@@ -71,6 +71,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ---
 
 Thank you for checking out our project. Please feel free to leave feedback!
-```
-
-
