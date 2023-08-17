@@ -11,6 +11,55 @@ import { faCcVisa, faCcMastercard } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import logo from "@/app/icons/logo-small.6645556.svg";
 
+const COMPANY_CATEGORIES = [
+  "YACHTNEEDS",
+  "Est-Ouest, 24, Boulevard Princesse Charlotte, 98000, Monaco",
+];
+
+const socialLinks = [
+  {
+    icon: <FaFacebookF className="w-5 h-5 fill-current" />,
+    color: "blue-600",
+    hoverColor: "blue-800",
+  },
+  {
+    icon: <FaInstagram className="w-5 h-5 fill-current" />,
+    color: "pink-600",
+    hoverColor: "pink-800",
+  },
+  {
+    icon: <FaTwitter className="w-5 h-5 fill-current" />,
+    color: "blue-400",
+    hoverColor: "blue-600",
+  },
+  {
+    icon: <FaYoutube className="w-5 h-5 fill-current" />,
+    color: "red-600",
+    hoverColor: "red-800",
+  },
+  {
+    icon: <FaLinkedinIn className="w-5 h-5 fill-current" />,
+    color: "blue-700",
+    hoverColor: "blue-900",
+  },
+];
+
+const paymentIcons = [
+  { icon: faCcVisa, color: "gray-200", hoverColor: "blue-900" },
+  { icon: faCcMastercard, color: "gray-200", hoverColor: "blue-900" },
+];
+
+const LinkColumn = ({ title, links }) => (
+  <div className="flex flex-col w-full md:w-1/5 space-y-2 mb-6 md:mb-0">
+    <h3 className="font-bold">{title}</h3>
+    {links.map((link) => (
+      <a key={link} href="#" className="hover:underline">
+        {link}
+      </a>
+    ))}
+  </div>
+);
+
 function Footer() {
   return (
     <div className="bg-gray-800 px-4 lg:px-28 p-6 text-white">
@@ -28,117 +77,77 @@ function Footer() {
           <div className="ml-2 md:ml-5 text-sm ">Y A C H T N E E D S</div>
         </label>
 
-        {/* Вторая колонка */}
-        <div className="flex flex-col w-full md:w-1/5 space-y-2 mb-6 md:mb-0">
-          <h3 className="font-bold">YACHTNEEDS logo</h3>
-          <a href="#" className="hover:underline">
-            Shop categories
-          </a>
-          <a href="#" className="hover:underline">
-            Bridge
-          </a>
-          <a href="#" className="hover:underline">
-            Deck
-          </a>
-          <a href="#" className="hover:underline">
-            Engineering
-          </a>
-          <a href="#" className="hover:underline">
-            Galley
-          </a>
-          <a href="#" className="hover:underline">
-            Interior
-          </a>
-          <a href="#" className="hover:underline">
-            Other
-          </a>
-          <a href="#" className="hover:underline">
-            Manufacturers
-          </a>
-        </div>
+        <LinkColumn
+          title={`${COMPANY_CATEGORIES[0]} logo`}
+          links={[
+            "Shop categories",
+            "Bridge",
+            "Deck",
+            "Engineering",
+            "Galley",
+            "Interior",
+            "Other",
+            "Manufacturers",
+          ]}
+        />
 
-        {/* Третья колонка */}
-        <div className="flex flex-col w-full md:w-1/5 space-y-2 mb-6 md:mb-0">
-          <h3 className="font-bold">Company</h3>
-          <a href="#" className="hover:underline">
-            About YACHTNEEDS
-          </a>
-          <a href="#" className="hover:underline">
-            FAQs & Support
-          </a>
-          <a href="#" className="hover:underline">
-            Contact YACHTNEEDS
-          </a>
-          <a href="#" className="hover:underline">
-            Collecting your order
-          </a>
-          <a href="#" className="hover:underline">
-            Media & marketing opportunities
-          </a>
-          <a href="#" className="hover:underline">
-            Free Shipping
-          </a>
-        </div>
+        <LinkColumn
+          title="Company"
+          links={[
+            "About",
+            "FAQs & Support",
+            `Contact ${COMPANY_CATEGORIES[0]}`,
+            "Collecting your order",
+            "Media & marketing opportunities",
+            "Free Shipping",
+          ]}
+        />
 
-        {/* Четвертая колонка */}
-        <div className="flex flex-col w-full md:w-1/5 space-y-2 mb-6 md:mb-0">
-          <h3 className="font-bold">Legal info</h3>
-          <a href="#" className="hover:underline">
-            Terms of Service
-          </a>
-          <a href="#" className="hover:underline">
-            Refund & Returns
-          </a>
-          <a href="#" className="hover:underline">
-            Restrictions & Shipping Conditions
-          </a>
-          <a href="#" className="hover:underline">
-            Privacy Policy
-          </a>
-          <a href="#" className="hover:underline">
-            Cookie Policy
-          </a>
-        </div>
+        <LinkColumn
+          title="Legal info"
+          links={[
+            "Terms of Service",
+            "Refund & Returns",
+            "Restrictions & Shipping Conditions",
+            "Privacy Policy",
+            "Cookie Policy",
+          ]}
+        />
 
-        {/* Пятая колонка - соцсети */}
         <div className="flex flex-col w-full lg:w-1/5 items-center lg:items-start justify-center space-y-2 mt-6 lg:mt-0">
           <h3 className="font-bold">Stay in touch:</h3>
           <div className="flex space-x-4">
-            <a href="#" className="text-blue-600 hover:text-blue-800">
-              <FaFacebookF className="w-5 h-5 fill-current" />
-            </a>
-            <a href="#" className="text-pink-600 hover:text-pink-800">
-              <FaInstagram className="w-5 h-5 fill-current" />
-            </a>
-            <a href="#" className="text-blue-400 hover:text-blue-600">
-              <FaTwitter className="w-5 h-5 fill-current" />
-            </a>
-            <a href="#" className="text-red-600 hover:text-red-800">
-              <FaYoutube className="w-5 h-5 fill-current" />
-            </a>
-            <a href="#" className="text-blue-700 hover:text-blue-900">
-              <FaLinkedinIn className="w-5 h-5 fill-current" />
-            </a>
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href="#"
+                className={`text-${link.color} hover:text-${link.hoverColor}`}
+              >
+                {link.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>
+
       <div className="flex flex-col md:flex-row justify-between items-center flex-wrap mt-10">
         <div className="text-sm text-gray-500 mb-4 md:mb-0 text-center md:text-left">
-          Est-Ouest, 24, Boulevard Princesse Charlotte, 98000, Monaco
+          {COMPANY_CATEGORIES[1]}
         </div>
+
         <div className="flex space-x-2 md:space-x-4">
-          <a href="#" className="text-gray-200 hover:text-blue-900">
-            <FontAwesomeIcon
-              icon={faCcVisa}
-              className="w-8 h-8 md:w-12 md:h-12 fill-current"
-            />
-          </a>
-          <a href="#" className="text-gray-200 hover:text-blue-900">
-            <FontAwesomeIcon
-              icon={faCcMastercard}
-              className="w-8 h-8 md:w-12 md:h-12 fill-current"
-            />
-          </a>
+          {paymentIcons.map((icon, index) => (
+            <a
+              key={index}
+              href="#"
+              className={`text-${icon.color} hover:text-${icon.hoverColor}`}
+            >
+              <FontAwesomeIcon
+                icon={icon.icon}
+                className="w-8 h-8 md:w-12 md:h-12 fill-current"
+              />
+            </a>
+          ))}
         </div>
       </div>
     </div>
