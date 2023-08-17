@@ -11,14 +11,6 @@ import { faCcVisa, faCcMastercard } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import logo from "@/app/icons/logo-small.6645556.svg";
 
-<<<<<<< HEAD
-const COMPANY_CATEGORIES = [
-  "YACHTNEEDS",
-  "Est-Ouest, 24, Boulevard Princesse Charlotte, 98000, Monaco",
-];
-
-=======
->>>>>>> add-footer
 const socialLinks = [
   {
     icon: <FaFacebookF className="w-5 h-5 fill-current" />,
@@ -81,11 +73,7 @@ function Footer() {
         </label>
 
         <LinkColumn
-<<<<<<< HEAD
-          title={`${COMPANY_CATEGORIES[0]} logo`}
-=======
           title="YACHTNEEDS logo"
->>>>>>> add-footer
           links={[
             "Shop categories",
             "Bridge",
@@ -103,11 +91,7 @@ function Footer() {
           links={[
             "About",
             "FAQs & Support",
-<<<<<<< HEAD
-            `Contact ${COMPANY_CATEGORIES[0]}`,
-=======
             "Contact YACHTNEEDS",
->>>>>>> add-footer
             "Collecting your order",
             "Media & marketing opportunities",
             "Free Shipping",
@@ -143,7 +127,7 @@ function Footer() {
 
       <div className="flex flex-col md:flex-row justify-between items-center flex-wrap mt-10">
         <div className="text-sm text-gray-500 mb-4 md:mb-0 text-center md:text-left">
-          {COMPANY_CATEGORIES[1]}
+          Est-Ouest, 24, Boulevard Princesse Charlotte, 98000, Monaco
         </div>
 
         <div className="flex space-x-2 md:space-x-4">
