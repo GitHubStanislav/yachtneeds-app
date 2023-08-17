@@ -1,6 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Yacht & Marine Products Marketplace
+
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![Next.js](https://img.shields.io/badge/-Next.js-black?logo=next.js&style=for-the-badge)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)
+
+---
+
+## 🌊 Overview
+
+Welcome to the marketplace for yachting and marine products.
+
+## 🛠 Technology Stack
+
+- **React** - A JavaScript library for building user interfaces, ensuring a responsive and fluid user experience.
+  
+- **Next.js** - A React framework that enables features such as server-side rendering and static site generation, ensuring optimized performance and improved SEO.
+
+- **TailwindCSS** - A utility-first CSS framework for rapidly building custom designs, giving our marketplace a unique and responsive design.
+
+## 💡 Features
+
+ **User-friendly Interface:** A sleek, intuitive interface designed with the user in mind. 
+ **Extensive Listings:** A wide variety of yachts and marine products available at your fingertips.
+
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -18,17 +42,32 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+To get a local copy up and running, follow these simple steps:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clone the repo
+git clone [repo-url]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Navigate to the project directory
+cd [project-name]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Install dependencies
+npm install
 
-## Deploy on Vercel
+# Run the development server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+🌐 **Project Link** - [Click Here](#)
+
+👤 **Author Name** - Spiridonov Stanislav 
+
+---
+
+Thank you for checking out our project. Please feel free to leave feedback!
